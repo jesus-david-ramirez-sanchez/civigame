@@ -1,0 +1,12 @@
+<div class="functions">
+  <ngx-masonry class="container-fluid">
+    <ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems">
+        <div class="card shadow">
+          <div class="{{item.class}}">
+          <h1>{{item.title}}</h1>
+          <p>{{item.content}}</p>
+        </div>
+        </div>
+  </ngxMasonryItem>
+  </ngx-masonry>
+</div>

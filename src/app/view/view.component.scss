@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans|Poppins');
+
+
+.galery{
+  height: 100vh;
+  background: url(../../assets/img/imagenfondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ngx-masonry {
+  height: 100%;
+  margin-left: 7%;
+  margin-top: 5%;
+}
+
+
+  .masonry-item {
+    display: block;
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    padding: 5px;
+
+    h5{
+      font-weight: bold;
+      font-size: 25px;
+      padding: 6px;
+    }
+
+    p{
+      font-size: 14px;
+      padding: 6px;
+    }
+
+    .gps{
+      display: flex;
+
+      i{
+        padding-top: 5px;
+      }
+      h4{
+        font-size: 12px;
+        font-weight: bold;
+        padding: 6px;
+      }
+    }
+   }
+
+   @media screen and (max-width: 630px){
+
+
+    .galery{
+      width: 100%;
+      background: url(../../assets/img/santi.png);
+      background-position: center;
+      background-size: cover;
+    }
+
+
+  .masonry-item {
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    padding: 5px;
+    margin: 0 auto !important;
+  }
+}
