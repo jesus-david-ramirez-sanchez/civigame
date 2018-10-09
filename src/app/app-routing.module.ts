@@ -19,13 +19,13 @@ const routes: Routes = [
     },
     {
       path: '',
-      redirectTo: '/video',
+      redirectTo: '/single',
       pathMatch: 'full'
     }
   ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {enableTracing: false})],
+  imports: [RouterModule.forRoot(routes, {enableTracing: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

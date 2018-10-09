@@ -22,9 +22,16 @@
     transform: rotate(10deg) !important;
 
     h1{
+      color: #fff;
       font-weight: bold;
-      font-size: 50px;
+
+      i{
+        font-weight: bold !important;
+        font-style:normal;
+        color: #299bc8;
+      }
     }
+
 
     p{
       font-size: 16px;
