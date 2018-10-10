@@ -12,7 +12,6 @@ import { DinamicaComponent } from './single-page/dinamica/dinamica.component';
 import { FunctionsComponent } from './single-page/functions/functions.component';
 import { HeaderComponent } from './single-page/header/header.component';
 import { PremiosComponent } from './single-page/premios/premios.component';
-import { VideoComponent } from './video/video.component';
 import { ViewComponent } from './view/view.component';
 import { PasosComponent } from './single-page/pasos/pasos.component';
 
@@ -25,7 +24,6 @@ import { PasosComponent } from './single-page/pasos/pasos.component';
     FunctionsComponent,
     HeaderComponent,
     PremiosComponent,
-    VideoComponent,
     ViewComponent,
     PasosComponent
   ],
