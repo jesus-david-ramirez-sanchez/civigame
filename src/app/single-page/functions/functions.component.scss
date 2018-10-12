@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans|Poppins');
 
 ngx-masonry {
-  width: 100% ;
+  margin: 0 auto;
 }
 
 
 .functions{
   height: 100%;
-  margin-left: 1.5%;
 }
 
 h1{
@@ -27,8 +26,7 @@ p{
   .masonry-item {
     font-family: 'Encode Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    max-width: 325px;
-    padding: .5px;
+    max-width: 300px;
   }
 
 

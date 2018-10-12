@@ -25,4 +25,14 @@ export class AppComponent {
   public CloseMenu() {
     $('.navbar-toggler').trigger('click');
   }
+
+  public float() {
+      const floatButton = document.getElementById('float-button'),
+        floatmenu = document.getElementById('circular-menu');
+
+
+
+          floatButton.classList.toggle('pulsed');
+          floatmenu.classList.toggle('expand');
+  }
 }
