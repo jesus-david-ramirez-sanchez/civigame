@@ -18,11 +18,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
-a,
-a:hover,
-a:focus,
-a:target,
-a:focus {
+button,
+button:hover,
+button:focus,
+button:target,
+button:focus {
   font-size: 18px !important;
   margin-top: 13px;
   border: 1px solid transparent !important;
@@ -1987,12 +1987,12 @@ textarea {
   transform-origin: 100% 100%;
 }
 
-.dropdown-menu .disabled>a {
+.dropdown-menu .disabled>button {
   color: #777;
 }
 
-.dropdown-menu .disabled>a:focus,
-.dropdown-menu .disabled>a:hover {
+.dropdown-menu .disabled>button:focus,
+.dropdown-menu .disabled>button:hover {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
@@ -2014,7 +2014,7 @@ textarea {
 }
 
 .dropdown-menu .dropdown-item,
-.dropdown-menu li>a {
+.dropdown-menu li>button {
   position: relative;
   width: auto;
   display: flex;
@@ -2041,7 +2041,7 @@ textarea {
 
 @media (min-width: 768px) {
   .dropdown-menu .dropdown-item,
-  .dropdown-menu li>a {
+  .dropdown-menu li>button {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
@@ -2049,9 +2049,9 @@ textarea {
 
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus,
-.dropdown-menu a:hover,
-.dropdown-menu a:focus,
-.dropdown-menu a:active {
+.dropdown-menu button:hover,
+.dropdown-menu button:focus,
+.dropdown-menu button:active {
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
   background-color: #9c27b0;
   color: #FFFFFF;
@@ -2905,7 +2905,7 @@ footer ul li {
   display: inline-block;
 }
 
-footer ul li a {
+footer ul li button {
   color: inherit;
   padding: 0.9375rem;
   font-weight: 500;
@@ -2917,7 +2917,7 @@ footer ul li a {
   display: block;
 }
 
-footer ul li a:hover {
+footer ul li button:hover {
   text-decoration: none;
 }
 
@@ -2925,11 +2925,11 @@ footer ul li .btn {
   margin: 0;
 }
 
-footer ul.links-horizontal:first-child a {
+footer ul.links-horizontal:first-child button {
   padding-left: 0;
 }
 
-footer ul.links-horizontal:last-child a {
+footer ul.links-horizontal:last-child button {
   padding-right: 0;
 }
 
@@ -2939,11 +2939,11 @@ footer ul.links-vertical li {
   margin-right: -5px;
 }
 
-footer ul.links-vertical li a {
+footer ul.links-vertical li button {
   padding: 5px;
 }
 
-footer .social-buttons a,
+footer .social-buttons button,
 footer .social-buttons .btn {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -3093,7 +3093,7 @@ footer .pull-center {
   border-radius: 6px;
 }
 
-.card .card-header.card-header-image a {
+.card .card-header.card-header-image button {
   display: block;
 }
 
@@ -3209,10 +3209,10 @@ footer .pull-center {
   color: #fff;
 }
 
-.card [class*="header-"] .card-title a,
+.card [class*="header-"] .card-title button,
 .card [class*="header-"] .card-title,
 .card [class*="header-"] .icon i,
-.card[class*="bg-"] .card-title a,
+.card[class*="bg-"] .card-title button,
 .card[class*="bg-"] .card-title,
 .card[class*="bg-"] .icon i {
   color: #fff;
@@ -3223,23 +3223,23 @@ footer .pull-center {
   border-color: rgba(255, 255, 255, 0.25);
 }
 
-.card [class*="header-"] .author a,
+.card [class*="header-"] .author button,
 .card [class*="header-"] .stats,
 .card [class*="header-"] .card-category,
 .card [class*="header-"] .card-description,
-.card[class*="bg-"] .author a,
+.card[class*="bg-"] .author button,
 .card[class*="bg-"] .stats,
 .card[class*="bg-"] .card-category,
 .card[class*="bg-"] .card-description {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.card [class*="header-"] .author a:hover,
-.card [class*="header-"] .author a:focus,
-.card [class*="header-"] .author a:active,
-.card[class*="bg-"] .author a:hover,
-.card[class*="bg-"] .author a:focus,
-.card[class*="bg-"] .author a:active {
+.card [class*="header-"] .author button:hover,
+.card [class*="header-"] .author button:focus,
+.card [class*="header-"] .author button:active,
+.card[class*="bg-"] .author button:hover,
+.card[class*="bg-"] .author button:focus,
+.card[class*="bg-"] .author button:active {
   color: #fff;
 }
 
@@ -3251,12 +3251,12 @@ footer .pull-center {
   margin-right: 5px;
 }
 
-.card .author a {
+.card .author button {
   color: #3C4858;
   text-decoration: none;
 }
 
-.card .author a .ripple-container {
+.card .author button .ripple-container {
   display: none;
 }
 
@@ -3361,7 +3361,7 @@ footer .pull-center {
   z-index: 1;
 }
 
-.login-page .footer .copyright a {
+.login-page .footer .copyright button {
   color: #fff;
 }
 
@@ -3428,11 +3428,11 @@ footer .pull-center {
   list-style: none;
 }
 
-.bootstrap-datetimepicker-widget a:hover {
+.bootstrap-datetimepicker-widget button:hover {
   box-shadow: none !important;
 }
 
-.bootstrap-datetimepicker-widget a .btn:hover {
+.bootstrap-datetimepicker-widget button .btn:hover {
   background-color: transparent;
 }
 
@@ -3489,7 +3489,7 @@ footer .pull-center {
   margin: 0;
 }
 
-.bootstrap-datetimepicker-widget a[data-action] {
+.bootstrap-datetimepicker-widget button[data-action] {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -3498,16 +3498,16 @@ footer .pull-center {
   box-shadow: none;
 }
 
-.bootstrap-datetimepicker-widget a[data-action]:hover {
+.bootstrap-datetimepicker-widget button[data-action]:hover {
   background-color: transparent;
 }
 
-.bootstrap-datetimepicker-widget a[data-action]:hover span {
+.bootstrap-datetimepicker-widget button[data-action]:hover span {
   background-color: #eee;
   color: #9c27b0;
 }
 
-.bootstrap-datetimepicker-widget a[data-action]:active {
+.bootstrap-datetimepicker-widget button[data-action]:active {
   box-shadow: none;
 }
 
