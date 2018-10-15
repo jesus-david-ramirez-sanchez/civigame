@@ -261,25 +261,26 @@ $altura: 70vh;
     }
     section.p1 h1 {
       font-weight: bold;
-      font-size: 70px;
+      font-size: 60px;
       position: absolute;
-      margin: 0 auto;
+      margin: 0 14%;
       margin-top: 50%;
       color: transparent;
     }
     section.p1 h1:after,
     section.p1 h1:before {
+      $scale: 1;
       content: attr(data-cont);
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-left: -178px;
+      margin-left: -128px;
       margin-top: -47px;
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
+      -webkit-transform: scale($scale);
+      -moz-transform: scale($scale);
+      -ms-transform: scale($scale);
+      -o-transform: scale($scale);
+      transform: scale($scale);
       -webkit-transition: 1s all;
       -moz-transition: 1s all;
       -ms-transition: 1s all;
