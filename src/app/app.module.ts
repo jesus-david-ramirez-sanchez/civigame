@@ -14,22 +14,14 @@ import { HeaderComponent } from './single-page/header/header.component';
 import { PremiosComponent } from './single-page/premios/premios.component';
 import { ViewComponent } from './view/view.component';
 import { PasosComponent } from './single-page/pasos/pasos.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
-  {
-    path: 'view',
-    component: ViewComponent
-  },
-  {
-    path: 'single',
-    component: SinglePageComponent
-  },
-  {
-    path: '',
-    redirectTo: '/single',
-    pathMatch: 'full'
-  }
+  { path: 'view', component: ViewComponent, data: { title: 'Galary Time' } },
+  { path: 'single', component: SinglePageComponent, data: { title: 'CiviGame' } },
+  { path: '', redirectTo: '/single', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent, data: { title: 'error 404' } }
 ];
 
 @NgModule({
@@ -42,7 +34,8 @@ const routes: Routes = [
     HeaderComponent,
     PremiosComponent,
     ViewComponent,
-    PasosComponent
+    PasosComponent,
+    PageNotFoundComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -53,7 +46,7 @@ const routes: Routes = [
     NgbAlertModule,
     NgbModule,
     BrowserModule,
-    NgxMasonryModule,
+    NgxMasonryModule
 
   ],
   providers: [],
