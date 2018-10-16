@@ -1,10 +1,10 @@
 import { NgxMasonryModule } from 'ngx-masonry';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Component } from '@angular/core';
+import { NgModule, Component, ModuleWithProviders } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, provideRoutes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SinglePageComponent } from './single-page/single-page.component';
 import { ContactComponent } from './single-page/contact/contact.component';
@@ -39,7 +39,7 @@ const routes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(
-        routes,
+      routes,
       { enableTracing: true } // <-- debugging purposes only
     ),
     NgbPaginationModule,
@@ -52,4 +52,4 @@ const routes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

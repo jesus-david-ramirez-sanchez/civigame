@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { e } from '@angular/core/src/render3';
 declare var $: any;
 
 @Component({
@@ -20,19 +21,19 @@ export class AppComponent {
         }, 1000);
       }
     }
+
+    // tslint:disable-next-line:no-shadowed-variable
+    function capturarf5(e) {
+      const code = (e.keyCode ? e.keyCode : e.which);
+      if (code === 116) {
+        location.href = '/';
+      }
+    }
+    document.onkeydown = capturarf5;
   }
 
   public CloseMenu() {
     $('.navbar-toggler').trigger('click');
   }
 
-  public float() {
-      const floatButton = document.getElementById('float-button'),
-        floatmenu = document.getElementById('circular-menu');
-
-
-
-          floatButton.classList.toggle('pulsed');
-          floatmenu.classList.toggle('expand');
-  }
 }
