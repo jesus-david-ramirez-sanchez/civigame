@@ -1,4 +1,90 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+
+.contenedor {
+    font-family: 'Encode Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  position: fixed;
+  bottom: -0.5rem;
+  left: 5.3rem;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  z-index: 30;
+
+  a {
+  font-size:20px; 
+  color:#fff;
+  background: #4a0b5a;
+  border-radius:5px;
+  text-align:center;
+  text-decoration:none;
+  font-family:fontawesome;
+  position: relative;
+  display: inline-block;
+  width:40px;
+  height:38px;
+  padding-top: 8px;
+  margin:0 2px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+  background: #6d237f;
+}
+
+/* pop-up text */
+
+a i {
+  color:#666 !important;
+  position:absolute;
+  font-family: 'Encode Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:14px;
+  border-radius:2px;
+  background:#fff;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* pop-up text arrow */
+
+a i:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+/* text pops up when icon is in hover state */
+
+a:hover i {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+}
+
+}
 
 
 
