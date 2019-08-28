@@ -20,8 +20,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
   { path: 'view', component: ViewComponent, data: { title: 'Galary Time' } },
   { path: 'single', component: SinglePageComponent, data: { title: 'CiviGame' } },
-  { path: '', redirectTo: '/single', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent, data: { title: 'error 404' } }
+  { path: '', redirectTo: '/single', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -40,7 +39,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(
       routes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: true, useHash: true } // <-- debugging purposes only
     ),
     NgbPaginationModule,
     NgbAlertModule,
